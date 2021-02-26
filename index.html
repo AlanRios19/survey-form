@@ -9,97 +9,85 @@
     <link rel="icon" href="iconos/formulario-icono.png">
     
 </head>
-<body background="Imagen/programacion.jpg">
-    <header>
-        <h1 id="title">Desarrolladores</h1>
-        <p id="description">Encuesta para los amantes de la programacion</p>
-    </header>
-      <div class="container">
-        <div class="order">
-          <form id="survey-form" method="dialog">
-            <div class="center">
-                <label for="nombre" id="name-label">Nombre</label>
-                <input class="control"type="text" id="name" required placeholder="Por favor, escribe tu nombre completo">
-                <label for="edad" id="edad-label">Edad</label>
-                <input class="control"type="number" id="edad" required min="1" max="99" placeholder="Por favor, escribe tu edad">
-                <label for="email" id="email-label">Email</label>
-                <input class="control"type="email" id="email" required placeholder="Por favor, escribe tu email">
-                <label for="telefono" id="number-label">Telefono</label>
-                <input class="control" type="number" id="number" required min="1" max="9999999999" placeholder="Por favor, escribe tu numero de telefono">
+<body> 
+    <section class="container">
+        <h1 id="title">Encuesta para Desarrolladores</h1>
+    <div class="box">
+          <form id="survey-form">
+              <div class="inputs-comun">
+                <label class="labels" for="nombre" id="name-label">Nombre</label>
+                <input class="inputs"type="text" id="name" required placeholder="Por favor, escribe tu nombre completo">
+                <label class="labels" for="edad" id="edad-label">Edad</label>
+                <input class="inputs"type="number" id="edad" required min="1" max="99" placeholder="Por favor, escribe tu edad">
+                <label class="labels" for="email" id="email-label">Email</label>
+                <input class="inputs"type="email" id="email" required placeholder="Por favor, escribe tu email">
+                <label class="labels" for="telefono" id="number-label">Telefono</label>
+                <input class="inputs" type="number" id="number" required min="1" max="9999999999" placeholder="Por favor, escribe tu numero de telefono">
+            </div>
                 <h2>¿Cual es el puesto para el cual te gustaria trabajar?</h2>
-                <select class="control" name="puesto" id="dropdown">
+                <select>
                     <option value="1">Front-End</option>
                     <option value="2">Back-End</option>
                     <option value="3">Full Stack</option>
                 </select>
-             </div>
               <h2>¿Cual es tu seniority?</h2>
-                 <div class="order-new">
+                 <div class="inputs-radio">
                     <label for="seniority">Trainee</label>
-                    <input type="radio" name="seniority" value="1">
+                    <input type="radio" class="radio" value="1">
                     <label for="seniority">Junior</label>
-                    <input type="radio" name="seniority" value="2">
+                    <input type="radio" class="radio" value="2">
                     <label for="seniority">Semisenior</label>
-                    <input type="radio" name="seniority" value="3">
+                    <input type="radio" class="radio" value="3">
                     <label for="seniority">Senior</label>
-                    <input type="radio" name="seniority" value="4">
-                </div>
+                    <input type="radio" class="radio" value="4">
+                 </div>
                 <h2>¿Que tecnologias te gustaria aprender?</h2>
-                  <div class="order-new">
+                <div class="checkbox-uno">
                       <label for="tecnologias">Javascript</label>
-                      <input type="checkbox" name="tecnologias" value="1">
+                      <input class="label-checkbox-uno" type="checkbox" name="tecnologias" value="1">
                       <label for="tecnologias">Java</label>
-                      <input type="checkbox" name="tecnologias" value="2">
+                      <input class="label-checkbox-uno" type="checkbox" name="tecnologias" value="2">
                       <label for="tecnologias">MYSQL</label>
-                      <input type="checkbox" name="tecnologias" value="3">
+                      <input class="label-checkbox-uno" type="checkbox" name="tecnologias" value="3">
                       <label for="tecnologias">SQL server</label>
-                      <input type="checkbox" name="tecnologias" value="4">
+                      <input class="label-checkbox-uno" type="checkbox" name="tecnologias" value="4">
                       <label for="tecnologias">PHP</label>
-                      <input type="checkbox" name="tecnologias" value="5">
+                      <input class="label-checkbox-uno" type="checkbox" name="tecnologias" value="5">
                       <label for="tecnologias">React</label>
-                      <input type="checkbox" name="tecnologias" value="6">
+                      <input class="label-checkbox-uno" type="checkbox" name="tecnologias" value="6">
                       <label for="tecnologias">Angular</label>
-                      <input type="checkbox" name="tecnologias" value="7">
+                      <input class="label-checkbox-uno" type="checkbox" name="tecnologias" value="7">
                       <label for="tecnologias">Node</label>
-                      <input type="checkbox" name="tecnologias" value="8">
+                      <input class="label-checkbox-uno" type="checkbox" name="tecnologias" value="8">
+                    </div>
+                    <div class="checkbox-dos">
                       <label for="tecnologias">HTML</label>
-                      <input type="checkbox" name="tecnologias" value="9">
+                      <input class="label-checkbox-dos" type="checkbox" name="tecnologias" value="9">
                       <label for="tecnologias">CSS</label>
-                      <input type="checkbox" name="tecnologias" value="10">
+                      <input class="label-checkbox-dos" type="checkbox" name="tecnologias" value="10">
                       <label for="tecnologias">SASS</label>
-                      <input type="checkbox" name="tecnologias" value="11">
+                      <input class="label-checkbox-dos" type="checkbox" name="tecnologias" value="11">
                       <label for="tecnologias">Bootstrap</label>
-                      <input type="checkbox" name="tecnologias" value="12">
+                      <input class="label-checkbox-dos" type="checkbox" name="tecnologias" value="12">
                       <label for="tecnologias">Spring</label>
-                      <input type="checkbox" name="tecnologias" value="13">
+                      <input class="label-checkbox-dos" type="checkbox" name="tecnologias" value="13">
                       <label for="tecnologias">Laravel</label>
-                      <input type="checkbox" name="tecnologias" value="14">
+                      <input class="label-checkbox-dos" type="checkbox" name="tecnologias" value="14">
                       <label for="tecnologias">MongoDB</label>
-                      <input type="checkbox" name="tecnologias" value="15">
+                      <input class="label-checkbox-dos" type="checkbox" name="tecnologias" value="15">
                       <label for="tecnologias">C#</label>
-                      <input type="checkbox" name="tecnologias" value="16">
+                      <input class="label-checkbox-dos" type="checkbox" name="tecnologias" value="16">
                       <label for="tecnologias">.NET</label> 
-                      <input type="checkbox" name="tecnologias" value="17">
-                  </div>
+                      <input class="label-checkbox-dos" type="checkbox" name="tecnologias" value="17">
+                </div>
+                <h2>¿Quieres escribir algun comentario?</h2>
                   <div class="coments">
-                      <h2>¿Quieres escribir algun comentario?</h2>
-                      <textarea name="comentarios" id="comentarios" cols="70" rows="10" placeholder="Por favor, escribe tu comentario"></textarea>
+                      <textarea  cols="70" rows="10" placeholder="Por favor, escribe tu comentario"></textarea>
+                      <button type="submit">Enviar</button>
                   </div>
-                <!--   <div class="w3-container">
-                    <button onclick="document.getElementById('submit').style.display='block'" class="w3-button w3-teal w3-hover-teal" >Enviar</button>
-                     <div id="submit" class="w3-modal w3-animate-opacity">
-                        <div class="w3-modal-content w3-card-4">
-                          <div class="w3-container">
-                              <h3>Gracias por Completar la Encuesta</h3>
-                              <i class="fas fa-check-circle w3-jumbo"></i>
-                              <span onclick="location.reload()" 
-                              class="w3-button w3-large w3-display-topright w3-hover-black">&times;</span>
-                          </div>
-                        </div>
-                     </div>
-                  </div> -->
+    
               </form>
-          </div>
-      </div>
-</body>
+            </div>
+        </section>
+       </body>
 </html>
