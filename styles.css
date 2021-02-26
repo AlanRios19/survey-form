@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+body {
+   text-align: center;
+   background-position: center;
+   background-size: 1500px;
+   background-repeat: no-repeat;
+   position: relative;
+   color:whitesmoke;
+   background-color: #0ea4bb;
+   max-width: 100%;
+   font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+
+form {
+    background-color: #306475;
+    padding: 40px 10px;
+    border-radius: 4px;
+}
+
+@media (min-width: 480px) {
+    form {
+      padding: 40px;
+     }
+  }
+
+.center label {
+  padding: 5px;
+}
+
+.center input {
+  width: 92%;
+}
+
+.order label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#dropdown {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.container {
+  width: 100%;
+  margin: 34px auto 0 auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+
+.order {
+     padding: 4px; 
+  }
+
+  input,textarea {
+    font-size: inherit;
+    line-height: inherit;
+    outline: none;
+  }
+
+  .control {
+      display: block;
+      width: 100%;
+      height: 38px;
+      padding: 6px 12px;
+      color: #9c9ea0;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+   }
+
+  .order-new input {
+    display: block;
+    position: relative;
+    bottom: 24px;
+  }
+
+  .order-new label {
+   position: relative;
+   left: 30px;
+  }
+
+
+  input[type=checkbox] {
+    transform: scale(1.5);
+  }
+
+  input[type=radio] {
+    transform: scale(1.5);
+  }
+
+  .coments textarea {
+    position: relative;
+    padding: 10px;
+    width: 90%;
+  }
+
+  select{
+    outline: none;
+  }
+
+  form{
+    width: 200%;
+    
+  }
+/* .fas {
+  position: relative;
+  top: 40px;
+}
+ */
