@@ -13,9 +13,6 @@ Proyecto de Freecodecamp de un formulario de encuesta para programadores.
  <li>
   CSS
 </li>
-  <li>
-  W3.CSS
-</li>
 </ul>
 
 ### Visualización
